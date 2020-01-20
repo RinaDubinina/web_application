@@ -1,0 +1,10 @@
+com\ekaterinadubinina\java\connection\ConnectionFactory.class
+com\ekaterinadubinina\java\rest\NotesController.class
+com\ekaterinadubinina\java\service\PersonService.class
+com\ekaterinadubinina\java\structure\Notes.class
+com\ekaterinadubinina\java\dao\PersonDaoConn.class
+com\ekaterinadubinina\java\structure\CategoryPerson.class
+com\ekaterinadubinina\java\rest\PersonController.class
+com\ekaterinadubinina\java\structure\CategoryNotes.class
+com\ekaterinadubinina\java\structure\Person.class
+com\ekaterinadubinina\java\dao\PersonDao.class

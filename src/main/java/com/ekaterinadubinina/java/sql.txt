@@ -1,0 +1,23 @@
+CREATE SCHEMA IF NOT EXISTS note;
+
+CREATE TABLE IF NOT EXISTS note.person
+(
+    id         SERIAL NOT NULL PRIMARY KEY,
+    first_name VARCHAR NOT NULL,
+    last_name  VARCHAR NOT NULL,
+    email      VARCHAR NOT NULL UNIQUE,
+    category   VARCHAR
+);
+
+CREATE TABLE IF NOT EXISTS note.notes
+(
+    id           SERIAL NOT NULL PRIMARY KEY,
+    person_id    INT NOT NULL,
+    headline     VARCHAR NOT NULL,
+    body         VARCHAR NOT NULL,
+    category     VARCHAR,
+    phone_number VARCHAR NOT NULL,
+    created_date TIMESTAMP NOT NULL,
+
+    FOREIGN KEY (person_id) REFERENCES note.person (id)
+);

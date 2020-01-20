@@ -1,0 +1,13 @@
+SET SCHEMA 'note';
+
+INSERT INTO note.person (first_name, last_name, email, category)
+VALUES ('Ekaterina', 'Dubinina', 'dubinina1es@gmail.com', 'INDIVIDUAL'),
+       ('Nikolay', 'Ivanov', 'ivanov.na@gmail.com', 'INDIVIDUAL'),
+       ('Sergey', 'Odinokov', 'electronic.ads@gmail.com', 'COMPANY'),
+       ('Svetlana', 'Minina', 'nailgroup@gmail.com', 'COMPANY');
+
+INSERT INTO note.notes (person_id, headline, body, phone_number, created_date, category)
+VALUES (1, 'Car for sale', 'Car for sale', '+79312221154', current_timestamp, 'TRANSPORT'),
+       (2, 'Full-time job', 'Looking for full-time job', '+791178981143', current_timestamp, 'WORK'),
+       (3, 'New laptop for sale', 'New laptop for sale and other electronics', '+79894467557', current_timestamp,'ELECTRONICS'),
+       (4, 'Nail art', 'Nail art and other services', '+79647870060', current_timestamp,'SERVICES');
